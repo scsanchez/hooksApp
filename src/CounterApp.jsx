@@ -1,7 +1,7 @@
 import { useState } from "react";
-import "./App.css";
+import "./CounterApp.css";
 
-export const App = () => {
+export const CounterApp = () => {
   const [state, setCounter] = useState({
     counter1: 10,
     counter2: 20,
@@ -21,6 +21,8 @@ export const App = () => {
           setCounter({
             ...state,
             counter1: counter1 + 1,
+            counter2: counter2 +1,
+            counter3: counter3 +1,
           })
         }
       >
@@ -30,4 +32,4 @@ export const App = () => {
   );
 };
 
-export default App;
+export default CounterApp;
